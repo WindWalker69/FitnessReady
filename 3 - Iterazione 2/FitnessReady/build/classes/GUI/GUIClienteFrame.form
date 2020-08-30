@@ -1,0 +1,1449 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Menu class="javax.swing.JMenuBar" name="menuBar">
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="menuHome">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Home"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="menuHomeMouseClicked"/>
+          </Events>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="menuProfilo">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Profilo"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="itemDatiProfilo">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Dati Profilo"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itemDatiProfiloActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="itemVisualizzaScheda">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Visualizza Scheda"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itemVisualizzaSchedaActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="menuOrdini">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Ordini"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="menuOrdiniMouseClicked"/>
+          </Events>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="menuPrenotazioni">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Prenotazioni"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="menuPrenotazioniMouseClicked"/>
+          </Events>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="menuAcquisti">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Acquista"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="itemAcquistaProdotto">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Acquista Prodotto"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itemAcquistaProdottoActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="itemVisualizzaAcquisti">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Visualizza Acquisti"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itemVisualizzaAcquistiActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="menuCarrello">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Carrello"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="menuCarrelloMouseClicked"/>
+          </Events>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="menuEsci">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Esci"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="menuEsciMouseClicked"/>
+          </Events>
+        </Menu>
+      </SubComponents>
+    </Menu>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="menuBar"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="mainPanel" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="mainPanel" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="mainPanel">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignCardLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="panelLogo">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+              <CardConstraints cardName="panelLogo"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="265" max="-2" attributes="0"/>
+                      <Component id="labelLogo" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="265" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="140" max="-2" attributes="0"/>
+                      <Component id="labelLogo" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="140" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="labelLogo">
+              <Properties>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/images/fitness-ready-logo.png"/>
+                </Property>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="panelAcquista">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+              <CardConstraints cardName="panelAcquista"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="labelProdotti" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="191" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="-2" pref="143" max="-2" attributes="0"/>
+                              <Component id="buttonOrdinaNome" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="buttonOrdinaCategoria" min="-2" pref="160" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="182" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Component id="buttonOrdinaPrezzo" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="159" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace pref="78" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="scrollPaneTabellaProdotti" min="-2" pref="904" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="labelAvvisoAggiungi2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                              <Component id="labelAvvisoPrenota2" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="463" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="buttonPrenota" max="32767" attributes="0"/>
+                          <Component id="buttonAggiungiAlCarrello" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="labelAvvisoAggiungi1" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelAvvisoPrenota1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                      <Component id="labelProdotti" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="buttonOrdinaCategoria" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="buttonOrdinaPrezzo" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="buttonOrdinaNome" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="scrollPaneTabellaProdotti" min="-2" pref="242" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="buttonAggiungiAlCarrello" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelAvvisoAggiungi1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="buttonPrenota" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelAvvisoPrenota1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="79" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labelAvvisoAggiungi2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelAvvisoPrenota2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="labelProdotti">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Elenco Prodotti"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelAvvisoAggiungi1">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="(*)"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelAvvisoAggiungi2">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="(*) Clicca sul prodotto desiderato in tabella"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelAvvisoPrenota1">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="(**)"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelAvvisoPrenota2">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="(**) La prenotazione &#xe8; disponibile solo per i prodotti aventi disponibilit&#xe0; pari a 0"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="scrollPaneTabellaProdotti">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTable" name="tableProdotti">
+                  <Properties>
+                    <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                      <Table columnCount="6" rowCount="0">
+                        <Column editable="false" title="Id" type="java.lang.Object"/>
+                        <Column editable="false" title="Nome" type="java.lang.Object"/>
+                        <Column editable="false" title="Categoria" type="java.lang.Object"/>
+                        <Column editable="false" title="Prezzo" type="java.lang.Object"/>
+                        <Column editable="false" title="Prezzo Gettoni" type="java.lang.Object"/>
+                        <Column editable="false" title="Disponibilit&#xe0;" type="java.lang.Object"/>
+                      </Table>
+                    </Property>
+                    <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                      <TableColumnModel selectionModel="0">
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                      </TableColumnModel>
+                    </Property>
+                    <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                      <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tableProdottiMouseClicked"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JButton" name="buttonAggiungiAlCarrello">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Aggiungi al carrello"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonAggiungiAlCarrelloActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="buttonPrenota">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Prenota"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonPrenotaActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="buttonOrdinaNome">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ordina per Nome"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonOrdinaNomeActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="buttonOrdinaCategoria">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ordina per Categoria"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonOrdinaCategoriaActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="buttonOrdinaPrezzo">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ordina per Prezzo"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonOrdinaPrezzoActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="panelCarrello">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+              <CardConstraints cardName="panelCarrello"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="labelCarrello" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="411" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="labelAvvisoCarrello5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="labelAvvisoCarrello3" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="29" pref="29" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="buttonModificaQuantità" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="labelAvvisoCarrello1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="buttonRimuoviProdotto" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="labelAvvisoCarrello2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="buttonAcquista" max="32767" attributes="0"/>
+                                  <Component id="labelImportoSpesaGettoni" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="labelAvvisoCarrello4" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="labelImportoSpesa" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="buttonAnnulla" alignment="1" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="labelTotaleCarrello" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="labelEuro" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="labelTotaleGettoni" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="scrollPanelTabellaCarrello" min="-2" pref="960" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="50" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                      <Component id="labelCarrello" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="scrollPanelTabellaCarrello" min="-2" pref="242" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labelImportoSpesa" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelTotaleCarrello" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelEuro" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelAvvisoCarrello4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labelImportoSpesaGettoni" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelTotaleGettoni" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="buttonAcquista" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="buttonRimuoviProdotto" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="buttonModificaQuantità" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelAvvisoCarrello1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelAvvisoCarrello2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="buttonAnnulla" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="72" max="32767" attributes="0"/>
+                      <Component id="labelAvvisoCarrello3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      <Component id="labelAvvisoCarrello5" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="labelCarrello">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Riepilogo Prodotti Carrello"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelImportoSpesa">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Totale carrello:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelTotaleCarrello">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelImportoSpesaGettoni">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Totale carrello in gettoni:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelTotaleGettoni">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelEuro">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x20ac;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelAvvisoCarrello1">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="(*)"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelAvvisoCarrello2">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="(*)"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelAvvisoCarrello3">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="(*) Clicca sul prodotto desiderato in tabella"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelAvvisoCarrello4">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="(**)"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelAvvisoCarrello5">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="(**) +10&#x20ac; di spedizione per ordini inferiori a 35&#x20ac;"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="scrollPanelTabellaCarrello">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTable" name="tableCarrello">
+                  <Properties>
+                    <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                      <Table columnCount="8" rowCount="0">
+                        <Column editable="false" title="Id" type="java.lang.Object"/>
+                        <Column editable="false" title="Nome" type="java.lang.Object"/>
+                        <Column editable="false" title="Categoria" type="java.lang.Object"/>
+                        <Column editable="false" title="Prezzo" type="java.lang.Object"/>
+                        <Column editable="false" title="Prezzo Gettoni" type="java.lang.Object"/>
+                        <Column editable="false" title="Quantit&#xe0;" type="java.lang.Object"/>
+                        <Column editable="false" title="Sub Totale" type="java.lang.Object"/>
+                        <Column editable="false" title="Sub Totale Gettoni" type="java.lang.Object"/>
+                      </Table>
+                    </Property>
+                    <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                      <TableColumnModel selectionModel="0">
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                      </TableColumnModel>
+                    </Property>
+                    <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                      <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tableCarrelloMouseClicked"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JButton" name="buttonModificaQuantit&#xe0;">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Modifica Quantit&#xe0;"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonModificaQuantit&#xe0;ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="buttonRimuoviProdotto">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Rimuovi Prodotto"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonRimuoviProdottoActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="buttonAcquista">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Acquista Prodotti"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonAcquistaActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="buttonAnnulla">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Annulla Acquisto"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonAnnullaActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="panelVisualizzaAcquisti">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+              <CardConstraints cardName="panelVisualizzaAcquisti"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="79" max="-2" attributes="0"/>
+                              <Component id="scrollPaneVisualizzaAcquisti" min="-2" pref="900" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="442" max="-2" attributes="0"/>
+                              <Component id="labelVisualizzaAcquisti" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="81" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                      <Component id="labelVisualizzaAcquisti" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                      <Component id="scrollPaneVisualizzaAcquisti" min="-2" pref="362" max="-2" attributes="0"/>
+                      <EmptySpace pref="176" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="labelVisualizzaAcquisti">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Acquisti Effettuati"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="scrollPaneVisualizzaAcquisti">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="textAreaVisualizzaAcquisti">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Times New Roman" size="14" style="0"/>
+                    </Property>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="panelOrdini">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+              <CardConstraints cardName="panelOrdini"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="labelOrdini" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="456" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="buttonModificaOrdine" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="466" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                      <Component id="scrollPaneOrdini" min="-2" pref="900" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="80" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                      <Component id="labelOrdini" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                      <Component id="scrollPaneOrdini" min="-2" pref="303" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                      <Component id="buttonModificaOrdine" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="157" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="labelOrdini">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value="Ordini Effettuati"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="scrollPaneOrdini">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="textAreaOrdini">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Times New Roman" size="14" style="0"/>
+                    </Property>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JButton" name="buttonModificaOrdine">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Modifica Ordine"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonModificaOrdineActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="panelDatiProfilo">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+              <CardConstraints cardName="panelDatiProfilo"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="labelNome" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelCognome" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelEmail" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelPassword" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelAltezza" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelPeso" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelObiettivo" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="radioButtonAumento" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="radioButtonDefinizione" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="textFieldPeso" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="labelChili" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="textFieldAltezza" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="labelMetri" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="textFieldPassword" min="-2" pref="315" max="-2" attributes="0"/>
+                                  <Component id="textFieldCognome" alignment="0" min="-2" pref="315" max="-2" attributes="0"/>
+                                  <Component id="textFieldNome" alignment="0" min="-2" pref="315" max="-2" attributes="0"/>
+                                  <Component id="textFieldEmail" alignment="0" min="-2" pref="315" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="248" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="labelAvvisoDatiProfilo1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelImmagineProfilo" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Component id="labelGettoni" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="labelTotGettoni" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="buttonModificaDati" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelDatiProfilo" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="474" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="labelDatiProfilo" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="textFieldNome" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelNome" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="textFieldCognome" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelCognome" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="textFieldEmail" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelEmail" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="labelImmagineProfilo" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="textFieldPassword" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelPassword" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="labelGettoni" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelTotGettoni" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="textFieldAltezza" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelAltezza" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelMetri" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="textFieldPeso" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelPeso" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelChili" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="radioButtonDefinizione" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelObiettivo" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="radioButtonAumento" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labelAvvisoDatiProfilo1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="buttonModificaDati" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="labelDatiProfilo">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Dati Profilo"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelImmagineProfilo">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/images/immagine profilo.jpg"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelNome">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Nome:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelCognome">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Cognome:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelEmail">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="E-mail:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelPassword">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Password:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelAltezza">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Altezza:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelPeso">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Peso:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelMetri">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="m (*)"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelChili">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Kg (*)"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelObiettivo">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Obiettivo:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelGettoni">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Gettoni:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelTotGettoni">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelAvvisoDatiProfilo1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="(*) usare il punto &quot;.&quot; e non la virgola &quot;,&quot;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="textFieldNome">
+            </Component>
+            <Component class="javax.swing.JTextField" name="textFieldCognome">
+            </Component>
+            <Component class="javax.swing.JTextField" name="textFieldEmail">
+            </Component>
+            <Component class="javax.swing.JTextField" name="textFieldPassword">
+            </Component>
+            <Component class="javax.swing.JTextField" name="textFieldAltezza">
+            </Component>
+            <Component class="javax.swing.JTextField" name="textFieldPeso">
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="radioButtonDefinizione">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Definizione massa muscolare"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="radioButtonDefinizioneActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="radioButtonAumento">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Aumento massa muscolare"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="radioButtonAumentoActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="buttonModificaDati">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Modifica Dati"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonModificaDatiActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="panelVisualizzaScheda">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+              <CardConstraints cardName="panelVisualizzaScheda"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="447" max="-2" attributes="0"/>
+                              <Component id="labelNomeScheda" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="labelEsercizi" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="labelDieta" min="-2" max="-2" attributes="0"/>
+                                      <Component id="scrollPaneDieta" pref="1005" max="32767" attributes="0"/>
+                                      <Component id="scrollPaneEsercizi" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="27" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="456" max="32767" attributes="0"/>
+                      <Component id="buttonEseguiEsercizi" min="-2" pref="162" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="442" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="labelNomeScheda" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                      <Component id="labelDieta" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="scrollPaneDieta" min="-2" pref="200" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="labelEsercizi" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="scrollPaneEsercizi" min="-2" pref="200" max="-2" attributes="0"/>
+                      <EmptySpace pref="14" max="32767" attributes="0"/>
+                      <Component id="buttonEseguiEsercizi" min="-2" pref="35" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="labelNomeScheda">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Nome Scheda"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelDieta">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="16" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="DIETA"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelEsercizi">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="16" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="ESERCIZI"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="scrollPaneDieta">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="textAreaDieta">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JScrollPane" name="scrollPaneEsercizi">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="textAreaEsercizi">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JButton" name="buttonEseguiEsercizi">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Esegui Esercizi"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonEseguiEserciziActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="panelPrenotazioni">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+              <CardConstraints cardName="panelPrenotazioni"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="470" max="-2" attributes="0"/>
+                              <Component id="labelPrenotazioni" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="176" max="-2" attributes="0"/>
+                              <Component id="scrollPaneTabellaPrenotazioni" min="-2" pref="318" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="126" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="buttonDettagliPrenotazione" max="32767" attributes="0"/>
+                                  <Component id="buttonEliminaPrenotazione" min="-2" pref="183" max="-2" attributes="0"/>
+                                  <Component id="buttonModificaPrenotazione" min="-2" pref="183" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="labelAvvisoPrenotazione1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelAvvisoPrenotazione2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelAvvisoPrenotazione3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="labelAvvisoPrenotazione4" min="-2" max="-2" attributes="0"/>
+                                  <Component id="scrollPaneDettagliPrenotazione" min="-2" pref="952" max="-2" attributes="0"/>
+                                  <Component id="labelDettagliPrenotazione" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="53" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="labelPrenotazioni" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="scrollPaneTabellaPrenotazioni" min="-2" pref="191" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="buttonDettagliPrenotazione" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
+                                  <Component id="labelAvvisoPrenotazione1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="buttonModificaPrenotazione" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
+                                  <Component id="labelAvvisoPrenotazione2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="buttonEliminaPrenotazione" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
+                                  <Component id="labelAvvisoPrenotazione3" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="labelDettagliPrenotazione" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="scrollPaneDettagliPrenotazione" min="-2" pref="199" max="-2" attributes="0"/>
+                      <EmptySpace pref="86" max="32767" attributes="0"/>
+                      <Component id="labelAvvisoPrenotazione4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="labelPrenotazioni">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Prenotazioni"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelDettagliPrenotazione">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="16" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="DETTAGLI PRENOTAZIONE"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelAvvisoPrenotazione1">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="(*)"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelAvvisoPrenotazione2">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="(*)"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelAvvisoPrenotazione3">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="(*)"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelAvvisoPrenotazione4">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="(*)Clicca sulla prenotazione desiderata in tabella"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="scrollPaneTabellaPrenotazioni">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTable" name="tablePrenotazioni">
+                  <Properties>
+                    <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                      <Table columnCount="2" rowCount="0">
+                        <Column editable="false" title="Id" type="java.lang.Object"/>
+                        <Column editable="false" title="Data ed ora" type="java.lang.Object"/>
+                      </Table>
+                    </Property>
+                    <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                      <TableColumnModel selectionModel="0">
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                      </TableColumnModel>
+                    </Property>
+                    <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                      <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tablePrenotazioniMouseClicked"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JScrollPane" name="scrollPaneDettagliPrenotazione">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="textAreaDettagliPrenotazione">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="14" style="0"/>
+                    </Property>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JButton" name="buttonDettagliPrenotazione">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Dettagli Prenotazione"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonDettagliPrenotazioneActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="buttonEliminaPrenotazione">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Elimina Prenotazione"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonEliminaPrenotazioneActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="buttonModificaPrenotazione">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Modifica Prenotazione"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonModificaPrenotazioneActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

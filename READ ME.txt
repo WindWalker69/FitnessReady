@@ -1,0 +1,17 @@
+ACCESSO:
+
+Login come amministratore ->
+e-mail: "orazio.tomarchio@unict.it"
+password: "password"
+
+Login come cliente ->
+e-mail: "mr_95@live.it"
+password: "password"
+(oppure eseguire la procedura di registrazione)
+
+INFORMAZIONI GENERALI:
+Per una questione di rapidità atta a velocizzare la verifica della correttezza del processo, per la funzione "Esegui Esercizi"
+presente in "Visualizza Scheda" la durata di ogni esercizio è in secondi anziché in minuti.
+
+Per osservare gli effetti dei cambiamenti apportati dalle varie operazioni tra cliente ed amministratore non bisogna chiudere
+l'applicazione ma usare l'apposita funzione "Esci" con cui si può ri-effettuare il login come cliente o amministratore.
